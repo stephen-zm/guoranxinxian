@@ -1,0 +1,508 @@
+/*
+* @Author: stephen-zm
+* @Date:   2018-08-09 15:53:18
+* @Last Modified by:   stephen-zm
+* @Last Modified time: 2018-08-09 21:27:25
+*/
+@import url("base.css");
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/* 头部 */
+.top{
+	width: 1903px;
+	height: 107px;
+	background: #ffffff;
+}
+.head{
+	width: 1200px;
+	height: 107px;
+	margin: 0 auto;
+}
+.head img{
+	margin-top: 7px;
+	width: 153px;
+	height: 91px;
+	float: left;
+}
+.head_nav{
+	width: 600px;
+	height: 107px;
+	float: left;
+	margin-left: 147px;
+	position: relative;
+}
+.head_nav ul li{
+	width: 90px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 20px;
+	margin-top: 25px;
+	font-size: 16px;
+	text-align: center;
+	float: left;
+}
+.head_nav ul li a span{
+	color: #222222;
+}
+.head_nav ul li:hover a span{
+	color: #4AB344;
+}
+.head_nav ul li:first-child a span{
+	color: #4AB344;
+}
+.headright{
+	width: 156px;
+	height: 42px;
+	margin-top: 30px;
+	border: 1px solid #E6E6E6;
+	float: right;
+	position: relative;
+}
+.box{
+	width: 300px;
+	height: 140px;
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	position: absolute;
+	top: 42px;
+	right: 0;
+	overflow: hidden;
+	display: none;
+	color: #c6c6c6;
+	line-height: 140px;
+	font-size: 14px;
+}
+.headright span{ 
+	width: 70px;
+	height: 14px;
+	font-size: 14px;
+	margin-left: 14px;
+	margin-top: 10px;
+	color: #222222;
+}
+.headright svg{
+	margin-top: 13px;
+}
+.headright svg:first-child{
+	margin-left: 24px;
+}
+.borderb{
+	width: 600px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+}
+.dong{
+	width: 90px;
+	height: 2px;
+	position: absolute;
+	top: 0;
+	left: 20px; 
+	background: #4AB344;
+	transition: all 1s;
+}
+/* 图片 */
+.tu{
+	width: 100%;
+    height: 550px;
+    overflow: hidden;
+    margin: 0px auto;
+    background: url('../img/zm35.jpg') no-repeat;   
+}
+/* 内容 */
+.neirong{
+	width: 1200px;
+	height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.n_top{
+	width: 100%;
+    height: 625px;
+}
+.np_left{
+	float: left;
+    width: 500px;
+    height: 624px;
+}
+.np_img{
+	width: 499px;
+	height: 499px;
+	border: 1px solid #D1D1D1;
+}
+.np_img img{
+	width: 499px;
+	height: 499px;
+}
+.np_center{
+	width: 100%;
+    height: 30px;
+    margin-top: 20px;
+}
+.npc_left{
+	float: left;
+    text-align: center;
+    line-height: 29px;
+    color: #666;
+    width: 75px;
+    height: 29px;
+    margin-right: 5px;
+    border: 1px solid white;
+    font-size: 14px;
+}
+.npc_left:hover{
+	color: rgb(74, 179, 68);
+}
+.npc_right{
+	position: relative;
+	float: left;
+    text-align: center;
+    line-height: 29px;
+    color: #666;
+    width: 75px;
+    height: 29px;
+    margin-right: 5px;
+    overflow: hidden; 
+    border: 1px solid white;
+    font-size: 14px;
+}
+.npc_right:hover{
+	color: rgb(74, 179, 68);
+	overflow: visible;
+	border: 1px solid #D1D1D1;
+}
+.share{
+	position: absolute;
+    width: 218px;
+    height: 22px;
+    left: -1px;
+    top: 29px;
+    overflow: hidden;
+    border: 1px solid #D1D1D1;
+    background: url('../img/zm37.png') no-repeat;
+}
+.np_down{
+	width: 100%;
+    height: 30px;
+    margin-top: 20px;
+}
+.npd_left{
+	float: left;
+    width: 75px;
+    height: 29px;
+    border: 1px solid #D1D1D1;
+    border-radius: 29px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
+.npd_left:hover{
+	color: rgb(74, 179, 68);
+}
+.npd_right{
+	float: right;
+    width: 75px;
+    height: 29px;
+    border: 1px solid #D1D1D1;
+    border-radius: 29px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
+.npd_right:hover{
+	color: rgb(74, 179, 68);
+}
+.np_right{
+	float: right;
+    width: 545px;
+    height: 624px;
+    margin-right: 90px;
+}
+.npr_top{
+	color: #585858;
+    font-size: 20px;
+    text-align: left;
+}
+.npr_s{
+	position: relative;
+    background: url('../img/zm38.gif');
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    margin: 0 10px;
+    overflow: hidden;
+}
+.npr_s:hover{
+	overflow: visible;
+}
+.code{
+	position: absolute;
+    width: 130px;
+    height: 160px;
+    left: 25px;
+    top: 0;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #D1D1D1;
+}
+.code img{
+	width: 130px;
+	height: 130px;
+}
+.code p{
+	width: 100px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 15px;
+    color: white;
+    background-color: #7770ad;
+}
+.npr_center{
+	margin-top: 35px;
+    width: 545px;
+    height: 60px;
+    border-bottom: 1px solid #D1D1D1;
+}
+.a{
+	margin-left: 30px;
+	font-size: 14px;
+}
+.b{
+	color: #4AB344;
+    font-size: 24px;
+    font-weight: bold;
+}
+.c{
+	color: #4AB344;
+    font-size: 30px;
+    font-weight: bold;
+}
+.npr_down{
+    width: 545px;
+    height: 80px;
+    border-bottom: 1px solid #D1D1D1;
+    overflow: hidden;
+}
+.d{
+	width: 314px;
+    height: 26px;
+    margin-top: 30px;
+}
+.d_a{
+	float: left;
+    width: 93px;
+    height: 26px;
+    margin-left: 30px;
+}
+.d{
+	font-size: 14px;
+}
+.d_b{
+	border-left: 1px solid #D1D1D1;
+    height: 26px;
+    width: 1px;
+    float: left;
+    margin: 0 0 0 10px;
+}
+.npr_end{
+	width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 16px;
+    float: left;
+
+}
+.npre_a{
+	width: 121px;
+	height: 50px;
+	float: left;
+}
+.npre_a span{
+	width: 75px;
+    min-width: 75px;
+    max-width: 75px;
+    font-size: 14px;
+}
+#input{
+	border: 1px solid #8F8F8F;
+	width: 45px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.npre_b{
+	height: 40px;
+    width: 16px;
+    position: relative;
+    float: left;
+    margin-left: 3px;
+    margin-right: 14px;
+    margin-top: 8px;
+}
+.sg{
+	border: 1px solid #EEE;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../img/vbg01.png') -625px -974px no-repeat;
+}
+.sa{
+	border: 1px solid #EEE;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    background: url('../img/vbg01.png') -625px -1005px no-repeat;
+}
+.npr_we{
+	margin-top: 100px;
+    width: 100%;
+    height: 42px;
+}
+.button{
+	float: left;
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #4AB344;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #4AB344;
+}
+.butt{
+	float: left;
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #4AB344;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+    background: #4AB344;
+    color: white;
+}
+.n_down{
+	width: 1200px;
+	height: 1000px;
+	position: relative;
+}
+.n_hd{
+	width: 100%;
+    height: 60px;
+    border: 1px solid #EEE;
+}
+.n_hd li{
+	float: left;
+    width: 160px;
+    line-height: 57px;
+    height: 62px;
+    border-right: 1px solid #EEE;
+    text-align: center;
+    font-size: 14px;
+}
+.xian{
+    width: 160px;
+    height: 5px;
+   background: #5FAD01;
+   display: none;
+}
+.n_ha{
+	width: 1200px;
+	height: 892px;
+	position: absolute;
+	left: 0;
+	top: 62px;
+}
+.n_ha img{
+	width: 790px;
+	height: 892px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+/* 底部 */
+.footer{
+	width: 1903px;
+	height: 566px;
+	overflow: hidden;
+	background: url('../img/zm11.jpg') no-repeat;
+}
+.ft-top{
+	width: 1200px;
+	height: 181px;
+	margin: 0 auto; 
+	margin-top: 20px;
+	border-bottom: 1px solid #848484;
+}
+.ft-ti{
+	width: 1200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.ft-ti ul li{
+	width: 240px;
+	height: 200px;
+	float: left;
+	margin-left: 60px;	
+}
+.ft-ti ul li h3{
+	color: white;
+	padding-bottom: 20px;
+	font-size: 16px;
+}
+.ft-ti ul li p{
+	line-height: 25px;
+	color: #92CA9D;
+	font-size: 14px;
+}
+.end{
+	width: 1200px;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 65px;
+	text-align: center;
+	color: #92CA9D;
+	font-size: 14px;
+}
+.end p{
+	display: inline-block;
+}
+.end img{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+.back{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 40px;
+	bottom: 50px;
+	background: url('../img/03.png') no-repeat;
+}

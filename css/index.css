@@ -1,8 +1,8 @@
 /*
 * @Author: Administrator
 * @Date:   2018-07-17 09:06:16
-* @Last Modified by:   Administrator
-* @Last Modified time: 2018-07-18 23:08:54
+* @Last Modified by:   stephen-zm
+* @Last Modified time: 2018-08-09 13:03:28
 */
 @import url("base.css");
 *{
@@ -26,15 +26,18 @@ a{
 }
 .head img{
 	margin-top: 7px;
+	width: 153px;
+	height: 91px;
 	float: left;
 }
-.head-nav{
+.head_nav{
 	width: 600px;
 	height: 107px;
 	float: left;
 	margin-left: 147px;
+	position: relative;
 }
-.head-nav ul li{
+.head_nav ul li{
 	width: 90px;
 	height: 50px;
 	line-height: 50px;
@@ -44,23 +47,38 @@ a{
 	text-align: center;
 	float: left;
 }
-.head-nav ul li a span{
+.head_nav ul li a span{
 	color: #222222;
 }
-.head-nav ul li a span:hover{
+.head_nav ul li:hover a span{
 	color: #4AB344;
 }
-.head-nav ul li:first-child a span{
+.head_nav ul li:first-child a span{
 	color: #4AB344;
 }
-.head-right{
+.headright{
 	width: 156px;
 	height: 42px;
 	margin-top: 30px;
 	border: 1px solid #E6E6E6;
 	float: right;
+	position: relative;
 }
-.head-right span{ 
+.box{
+	width: 300px;
+	height: 140px;
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	position: absolute;
+	top: 42px;
+	right: 0;
+	overflow: hidden;
+	display: none;
+	color: #c6c6c6;
+	line-height: 140px;
+	font-size: 14px;
+}
+.headright span{ 
 	width: 70px;
 	height: 14px;
 	font-size: 14px;
@@ -68,15 +86,32 @@ a{
 	margin-top: 10px;
 	color: #222222;
 }
-.head-right svg{
+.headright svg{
 	margin-top: 13px;
 }
-.head-right svg:first-child{
+.headright svg:first-child{
 	margin-left: 24px;
+}
+.borderb{
+	width: 600px;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+}
+.dong{
+	width: 90px;
+	height: 2px;
+	position: absolute;
+	top: 0;
+	left: 20px; 
+	background: #4AB344;
+	transition: all 1s;
 }
 /* 图片 */
 .banner{
-	width: 1903px;
+	width: 100%;
 	height: 550px;
 	background: url('../img/zm6.jpg');
 }
@@ -208,14 +243,266 @@ a{
 	margin: 0 auto;
 	color: white;
 }
-
-
-
-
-
-
-
-
+.r-top:hover img{
+	transform: translateX(-15px);
+    transition: all 0.3s;
+}
+/* 中部标题 */
+.center{
+	width: 1424px;
+	height: 340px;
+	margin: 0 auto;
+	margin-top: 40px;
+	overflow: hidden;
+}
+.center_img{
+	width: 2848px;
+	height: 310px;
+	transition: 0.5s;
+}
+.center_img img{
+	width: 1424px;
+	height: 310px;
+	float: left;
+}
+.dian{
+	width: 770px;
+	width: 50px;
+	height: 20px;
+	margin-left: 50%;
+	bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.dian li{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #c6c6c6;
+	line-height: 20px;
+	color: white;
+	text-align: center;
+}
+.dian li.omg{
+	background-color: #8c8c8c;
+}
+/* 每日新品特卖 */
+.mai{
+	width: 800px;
+	height: 130px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.mai-up{
+	width: 800px;
+	height: 40px;
+	text-align: center;
+	font-size: 31px;
+	font-weight: bolder;
+	position: relative;
+}
+.mai-up::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 290px;
+	background: #e7e7e7;
+	height: 2px;
+}
+.mai-up::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 290px;
+	background: #e7e7e7;
+	height: 2px;
+}
+.mai-down{
+	width: 800px;
+	height: 21px;
+	font-size: 16px;
+	text-align: center;
+	color: #888888;
+}
+.sp-a{
+	width: 1200px;
+	height: 284px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.sp-a-left{
+	width: 306px;
+	height: 284px;
+	float: left;
+}
+.sp-a-right{
+	width: 894px;
+	height: 284px;
+	float: left;
+}
+.sp-a-l{
+	width: 100%;
+	height: 144px;
+}
+.sp-a-t{
+	width: 163px;
+	height: 52px;
+	margin-top: 50px;
+	background: #49900f;
+	text-align: center;
+	line-height: 52px;
+	font-size: 18px;
+}
+.sp-a-l span{
+	font-size: 14px;
+	color: #4b4b4b;
+}
+.l-a{
+	width: 306px;
+	height: 31px;
+}
+.l-a span{
+	font-size: 20px;
+	color: #4b4b4b;
+}
+.l-b{
+	width: 306px;
+	height: 56px;
+	margin-top: 27px;
+}
+.l-b span:first-child{
+	font-size: 42px;
+	font-weight: bolder;
+	color: #f39700;
+}
+.l-b span:last-child{
+	font-size: 18px;
+	color: #353535;
+}
+.sp-a-t a{
+	color: white;
+}
+.m-end{
+	width: 1200px;
+	height: 189px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.m-end ul li{
+	width: 270px;
+	height: 189px;
+	float: left;
+	margin-right: 25px;
+}
+.m-end ul li img{
+	width: 185px;
+	height: 185px;
+}
+.m-end ul li img:hover{
+	transform: translateX(-10px);
+}
+/* 分类 */
+.fen{
+	width: 1200px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.fen-nav{
+	width: 1200px;
+	height: 35px;
+	border-bottom: 1px solid #8c8c8c;
+}
+.fen-nav span:first-child{
+	font-size: 20px;
+	color: #678d1e;
+    font-weight: normal;
+}
+.fen-nav span:last-child{
+	font-size: 14px;
+	float: right;
+	color: #353535;
+}
+.fen_center{
+	width: 588px;
+	height: 270px;
+	float: left;
+	margin-top: 20px;
+	border-right: 1px solid #8c8c8c;
+}
+.fen_cr{
+	width: 560px;
+    height: 70px;
+    font-size: 16px;
+    overflow: hidden;
+}
+.fen_cr ul li{
+	width: 170px;
+	float: left;
+	cursor: pointer;
+}
+.bd{
+	width: 558px;
+	height: 150px;
+	position: relative;
+	overflow: hidden;
+}
+.bd ul{
+	width: 558px;
+	height: 510px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bd ul li{
+	font-size: 14px;
+	line-height: 30px;
+	width: 100%;
+	height: 30px;
+	color: #999;
+}
+.bd ul li p{
+	width: 170px;
+	float: left;
+}
+.fen_cen{
+	width: 600px;
+	height: 270px;
+	float: right;
+	margin-top: 20px;
+	position: relative;
+}
+.fc{
+	position: absolute;
+	left: 0;
+    top: 0;
+}
+.fang{
+	width: 51px;
+	height: 15px;
+	position: absolute;
+	right: 5px;
+    bottom: 5px;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+}
+.fang li{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 15px;
+    font-size: 14px;
+    color: black;
+}
+.fang li.we{
+	background: black;
+	color: #fff;
+}
 
 
 
@@ -267,8 +554,21 @@ a{
 	margin-top: 65px;
 	text-align: center;
 	color: #92CA9D;
-	font-size: 14px; 
+	font-size: 14px;
 }
 .end p{
-	display: block;
+	display: inline-block;
+}
+.end img{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+.back{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 40px;
+	bottom: 50px;
+	background: url('../img/03.png') no-repeat;
 }
