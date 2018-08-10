@@ -2,7 +2,7 @@
 * @Author: stephen-zm
 * @Date:   2018-07-20 13:44:30
 * @Last Modified by:   stephen-zm
-* @Last Modified time: 2018-08-09 13:11:52
+* @Last Modified time: 2018-08-10 09:06:37
 */
 
 'use strict';
@@ -68,6 +68,11 @@ window.onload=function(){
 		$(".fc").css("z-index",1).eq(index).css("z-index",2);
 		$(".fang li").removeClass("we").eq(index).addClass("we");
 	}
+	$(".fang li").click(function(){
+		let index=$(this).index();
+		$(".fc").css("z-index",1).eq(index).css("z-index",2);
+		$(".fang li").removeClass("we").eq(index).addClass("we");
+	});
 	//上滑
 	let bd=document.querySelector(".bd ul");
 	let p=setInterval(m,50);
